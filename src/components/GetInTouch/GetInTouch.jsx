@@ -6,6 +6,33 @@ import PhoneIcon from "../../assets/call_icon.svg";
 import LocationIcon from "../../assets/location_icon.svg";
 
 function GetInTouch() {
+  const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", accessKey);
+
+    console.log("Access Key:", import.meta.env.VITE_WEB3FORMS_ACCESS_KEY);
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: json,
+    }).then((res) => res.json());
+
+    if (res.success) {
+      console.log("Success", res);
+    }
+  };
+
   return (
     <div id="Contact" className="getintouch">
       <div className="getintouch__title">
@@ -37,7 +64,7 @@ function GetInTouch() {
             </div>
           </div>
         </div>
-        <form className="getintouch__details-right">
+        <form onSubmit={onSubmit} className="getintouch__details-right">
           <label htmlFor="name">Your Name</label>
           <input
             type="text"
@@ -59,7 +86,7 @@ function GetInTouch() {
             rows="8"
             placeholder="Enter your message"
           ></textarea>
-          <button>Submit</button>
+          <button type="submit">Submit</button>
         </form>
       </div>
     </div>

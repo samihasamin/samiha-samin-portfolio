@@ -1,0 +1,138 @@
+@font-face {
+  font-family: "Outfit";
+  src: url("../../assets/fonts/Outfit-Regular.woff2") format("woff2");
+  src: url("../../assets/fonts/Outfit-Regular.woff") format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("../../assets/fonts/Outfit-Medium.woff2") format("woff2");
+  src: url("../../assets/fonts/Outfit-Medium.woff") format("woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("../../assets/fonts/Outfit-SemiBold.woff2") format("woff2");
+  src: url("../../assets/fonts/Outfit-SemiBold.woff") format("woff");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("../../assets/fonts/Outfit-Bold.woff2") format("woff2");
+  src: url("../../assets/fonts/Outfit-Bold.woff") format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("../../assets/fonts/Outfit-Black.woff2") format("woff2");
+  src: url("../../assets/fonts/Outfit-Black.woff") format("woff");
+  font-weight: 900;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit";
+  height: 100vh;
+  background: #161513;
+  color: white;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin: 80px 170px;
+}
+.about-me__title {
+  position: relative;
+}
+.about-me__title h1 {
+  padding: 0px 30px;
+  font-size: 80px;
+  font-weight: 600;
+}
+.about-me__title img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+.about-me__content {
+  display: flex;
+  gap: 80px;
+}
+.about-me__content-details {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.about-me__content-details-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.about-me__content-details-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about-me__content-details-skills-html, .about-me__content-details-skills-js, .about-me__content-details-skills-react, .about-me__content-details-skills-node, .about-me__content-details-skills-sql {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  transition: 0.3s;
+}
+.about-me__content-details-skills-html p, .about-me__content-details-skills-js p, .about-me__content-details-skills-react p, .about-me__content-details-skills-node p, .about-me__content-details-skills-sql p {
+  min-width: 220px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.about-me__content-details-skills-html hr, .about-me__content-details-skills-js hr, .about-me__content-details-skills-react hr, .about-me__content-details-skills-node hr, .about-me__content-details-skills-sql hr {
+  outline: none;
+  border: none;
+  width: 50%;
+  height: 8px;
+  border-radius: 50px;
+  background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 106.28%);
+}
+.about-me__content-details-skills-html:hover, .about-me__content-details-skills-js:hover, .about-me__content-details-skills-react:hover, .about-me__content-details-skills-node:hover, .about-me__content-details-skills-sql:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+.about-me__achievements {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 80px;
+}
+.about-me__achievements-code, .about-me__achievements-projects, .about-me__achievements-techstack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: 0.5s;
+}
+.about-me__achievements-code h1, .about-me__achievements-projects h1, .about-me__achievements-techstack h1 {
+  font-size: 60px;
+  font-weight: 700;
+  background: linear-gradient(270deg, #df8908 50.41%, #b415ff 90.25%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about-me__achievements-code p, .about-me__achievements-projects p, .about-me__achievements-techstack p {
+  font-size: 20px;
+  font-weight: 500;
+}
+.about-me__achievements-code:hover, .about-me__achievements-projects:hover, .about-me__achievements-techstack:hover {
+  transform: scale(1.12);
+  transition: 0.5s;
+}/*# sourceMappingURL=AboutMe.css.map */

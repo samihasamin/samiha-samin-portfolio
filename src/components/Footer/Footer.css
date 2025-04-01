@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "Outfit";
+  src: url("../../assets/fonts/Outfit-Regular.woff2") format("woff2");
+  src: url("../../assets/fonts/Outfit-Regular.woff") format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("../../assets/fonts/Outfit-Medium.woff2") format("woff2");
+  src: url("../../assets/fonts/Outfit-Medium.woff") format("woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("../../assets/fonts/Outfit-SemiBold.woff2") format("woff2");
+  src: url("../../assets/fonts/Outfit-SemiBold.woff") format("woff");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("../../assets/fonts/Outfit-Bold.woff2") format("woff2");
+  src: url("../../assets/fonts/Outfit-Bold.woff") format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("../../assets/fonts/Outfit-Black.woff2") format("woff2");
+  src: url("../../assets/fonts/Outfit-Black.woff") format("woff");
+  font-weight: 900;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit";
+  height: 100vh;
+  background: #161513;
+  color: white;
+}
+
+.footer {
+  margin: 50px 170px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__top-left p {
+  font-size: 20px;
+  max-width: 400px;
+}
+.footer__top-right {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+.footer__top-right-email {
+  display: flex;
+  gap: 30px;
+  padding: 20px 30px;
+  border-radius: 50px;
+  background: #32323b;
+  padding-right: 80px;
+}
+.footer__top-right-email input {
+  outline: none;
+  border: none;
+  background: transparent;
+  color: #a0a0a0;
+  font-family: "Outfit";
+  font-size: 18px;
+}
+.footer__top-right-email:hover {
+  border: 2px solid white;
+}
+.footer__top-right-subscribe {
+  font-size: 20px;
+  padding: 22px 50px;
+  border-radius: 50px;
+  background: linear-gradient(264deg, #df8909 -5.09%, #b415ff 106.28%);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.footer__top-right-subscribe:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+.footer__bottom-right {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 50px;
+}/*# sourceMappingURL=Footer.css.map */

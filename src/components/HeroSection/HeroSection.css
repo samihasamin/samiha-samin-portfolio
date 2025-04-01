@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "Outfit";
+  src: url("../../assets/fonts/Outfit-Regular.woff2") format("woff2");
+  src: url("../../assets/fonts/Outfit-Regular.woff") format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("../../assets/fonts/Outfit-Medium.woff2") format("woff2");
+  src: url("../../assets/fonts/Outfit-Medium.woff") format("woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("../../assets/fonts/Outfit-SemiBold.woff2") format("woff2");
+  src: url("../../assets/fonts/Outfit-SemiBold.woff") format("woff");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("../../assets/fonts/Outfit-Bold.woff2") format("woff2");
+  src: url("../../assets/fonts/Outfit-Bold.woff") format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("../../assets/fonts/Outfit-Black.woff2") format("woff2");
+  src: url("../../assets/fonts/Outfit-Black.woff") format("woff");
+  font-weight: 900;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit";
+  height: 100vh;
+  background: #161513;
+  color: white;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 35px;
+}
+.hero__pic {
+  margin-top: 150px;
+}
+.hero__headline {
+  text-align: center;
+  width: 70%;
+  font-size: 90px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+}
+.hero__headline span {
+  background: linear-gradient(270deg, #df8909 10%, #b415ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero__tagline {
+  width: 50%;
+  text-align: center;
+  font-size: 24px;
+  line-height: 40px;
+}
+.hero__action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+.hero__action-connect {
+  padding: 25px 45px;
+  border-radius: 50px;
+  background: linear-gradient(264deg, #df8909 -5.09%, #b415ff 106.28%);
+  cursor: pointer;
+}
+.hero__action-connect:hover {
+  border: 2px solid white;
+}
+.hero__action-resume {
+  padding: 25px 75px;
+  border-radius: 50px;
+  border: 2px solid white;
+  cursor: pointer;
+}
+.hero__action-resume:hover {
+  border-color: #b415ff;
+}/*# sourceMappingURL=HeroSection.css.map */

@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "Outfit";
+  src: url("../../assets/fonts/Outfit-Regular.woff2") format("woff2");
+  src: url("../../assets/fonts/Outfit-Regular.woff") format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("../../assets/fonts/Outfit-Medium.woff2") format("woff2");
+  src: url("../../assets/fonts/Outfit-Medium.woff") format("woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("../../assets/fonts/Outfit-SemiBold.woff2") format("woff2");
+  src: url("../../assets/fonts/Outfit-SemiBold.woff") format("woff");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("../../assets/fonts/Outfit-Bold.woff2") format("woff2");
+  src: url("../../assets/fonts/Outfit-Bold.woff") format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("../../assets/fonts/Outfit-Black.woff2") format("woff2");
+  src: url("../../assets/fonts/Outfit-Black.woff") format("woff");
+  font-weight: 900;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit";
+  height: 100vh;
+  background: #161513;
+  color: white;
+}
+
+.my-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin: 80px 170px;
+}
+.my-projects__title {
+  position: relative;
+}
+.my-projects__title h1 {
+  padding: 0px 30px;
+  font-size: 80px;
+  font-weight: 600;
+}
+.my-projects__title img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+.my-projects__featured {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+.my-projects__featured img {
+  width: 419px;
+  height: 280px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.my-projects__featured img:hover {
+  transform: scale(1.1);
+  border: 4px solid #ff00ff;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.my-projects__showmore {
+  display: flex;
+  gap: 15px;
+  border-radius: 50px;
+  border: 2px solid white;
+  padding: 30px 60px;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 80px;
+  transition: 0.6s;
+  cursor: pointer;
+}
+.my-projects__showmore:hover {
+  gap: 30px;
+  transition: 0.6s;
+  border: 2px solid #ff00ff;
+}/*# sourceMappingURL=MyProjects.css.map */
