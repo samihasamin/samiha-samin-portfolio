@@ -18,7 +18,7 @@ It reflects my love for blending design and code to bring ideas to life — and 
 - HTML5
 - CSS3 / SCSS
 - React.js
-- Vite (optional, if you're using it)
+- Vite
 
 ## 🚀 Live Demo
 
