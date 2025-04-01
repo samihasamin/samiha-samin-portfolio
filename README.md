@@ -10,7 +10,7 @@ It reflects my love for blending design and code to bring ideas to life — and 
 
 ## 🌐 Preview
 
-![Portfolio Screenshot](./assets/my-portfolio-webpage.png)
+![Portfolio Screenshot](./src/assets/my-portfolio-webpage.png)
 
 ## 🔧 Built With
 
