@@ -8,6 +8,10 @@ I’m a front-end developer based in Toronto with a passion for creativity, visu
 This site showcases the projects I’ve built as part of my journey through a full-time coding bootcamp and beyond.  
 It reflects my love for blending design and code to bring ideas to life — and my continued growth as a developer.
 
+## 🌐 Preview
+
+![Portfolio Screenshot](./assets/my-portfolio-webpage.png)
+
 ## 🔧 Built With
 
 - HTML5
