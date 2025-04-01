@@ -1,0 +1,50 @@
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/fonts" as *;
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 170px;
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    gap: 60px;
+    font-size: 20px;
+
+    li {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+    }
+
+    img {
+      display: flex;
+      margin: auto;
+    }
+  }
+
+  &__connect {
+    padding: 20px 40px;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #df8909 10%, #b415ff 100%);
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+}
+
+.anchor-link {
+  text-decoration: none;
+  color: white;
+}
