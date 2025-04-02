@@ -13,7 +13,16 @@ function MyProjects() {
       </div>
       <div className="my-projects__featured">
         {myWorkData.map((work, index) => {
-          return <img src={work.w_img} alt="My Project Image" />;
+          return (
+            <a
+              key={index}
+              href={work.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={work.w_img} alt={`Project ${work.w_no}`} />
+            </a>
+          );
         })}
       </div>
       <div className="my-projects__showmore">
