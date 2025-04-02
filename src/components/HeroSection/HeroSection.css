@@ -99,4 +99,36 @@ body {
 }
 .hero__action-resume:hover {
   border-color: #b415ff;
+}
+
+@media (max-width: 768px) {
+  .hero__pic {
+    margin-top: 120px;
+    width: 260px;
+  }
+  .hero__headline {
+    margin-top: 50px;
+    width: 90%;
+    font-size: 50px;
+  }
+  .hero__tagline {
+    width: 60%;
+    font-size: 18px;
+    line-height: 32px;
+    margin: 10px 0px;
+  }
+  .hero__action {
+    gap: 16px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 50px;
+  }
+  .hero__action-connect {
+    padding: 20px 30px;
+    border-radius: 40px;
+  }
+  .hero__action-resume {
+    padding: 20px 50px;
+    border-radius: 40px;
+  }
 }/*# sourceMappingURL=HeroSection.css.map */

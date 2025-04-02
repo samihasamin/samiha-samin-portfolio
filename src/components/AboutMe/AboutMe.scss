@@ -122,3 +122,77 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .about-me {
+    gap: 80px;
+    margin: 50px 70px;
+    align-items: start;
+
+    &__title {
+      h1 {
+        font-size: 50px;
+        padding: 0;
+      }
+
+      img {
+        width: 130px;
+        right: -20px;
+      }
+    }
+
+    &__content {
+      flex-direction: column;
+
+      &-image {
+        display: none;
+      }
+
+      &-details {
+        &-text {
+          font-size: 18px;
+          line-height: 32px;
+        }
+
+        &-skills {
+          &-html,
+          &-js,
+          &-react,
+          &-node,
+          &-sql {
+            gap: 20px;
+            align-items: center;
+
+            p {
+              font-size: 20px;
+            }
+
+            hr {
+              height: 6px;
+            }
+          }
+        }
+      }
+    }
+
+    &__achievements {
+      justify-content: space-between;
+
+      &-code,
+      &-projects,
+      &-techstack {
+        gap: 10px;
+
+        h1 {
+          font-size: 34px;
+          font-weight: 700;
+        }
+
+        p {
+          text-align: center;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

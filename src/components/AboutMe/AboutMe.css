@@ -135,4 +135,54 @@ body {
 .about-me__achievements-code:hover, .about-me__achievements-projects:hover, .about-me__achievements-techstack:hover {
   transform: scale(1.12);
   transition: 0.5s;
+}
+
+@media (max-width: 768px) {
+  .about-me {
+    gap: 80px;
+    margin: 50px 70px;
+    align-items: start;
+  }
+  .about-me__title h1 {
+    font-size: 50px;
+    padding: 0;
+  }
+  .about-me__title img {
+    width: 130px;
+    right: -20px;
+  }
+  .about-me__content {
+    flex-direction: column;
+  }
+  .about-me__content-image {
+    display: none;
+  }
+  .about-me__content-details-text {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .about-me__content-details-skills-html, .about-me__content-details-skills-js, .about-me__content-details-skills-react, .about-me__content-details-skills-node, .about-me__content-details-skills-sql {
+    gap: 20px;
+    align-items: center;
+  }
+  .about-me__content-details-skills-html p, .about-me__content-details-skills-js p, .about-me__content-details-skills-react p, .about-me__content-details-skills-node p, .about-me__content-details-skills-sql p {
+    font-size: 20px;
+  }
+  .about-me__content-details-skills-html hr, .about-me__content-details-skills-js hr, .about-me__content-details-skills-react hr, .about-me__content-details-skills-node hr, .about-me__content-details-skills-sql hr {
+    height: 6px;
+  }
+  .about-me__achievements {
+    justify-content: space-between;
+  }
+  .about-me__achievements-code, .about-me__achievements-projects, .about-me__achievements-techstack {
+    gap: 10px;
+  }
+  .about-me__achievements-code h1, .about-me__achievements-projects h1, .about-me__achievements-techstack h1 {
+    font-size: 34px;
+    font-weight: 700;
+  }
+  .about-me__achievements-code p, .about-me__achievements-projects p, .about-me__achievements-techstack p {
+    text-align: center;
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=AboutMe.css.map */

@@ -144,4 +144,50 @@ body {
 .getintouch__details-right button:hover {
   transform: scale(1.1);
   transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .getintouch {
+    gap: 50px;
+    margin: 50px 70px;
+    align-items: start;
+  }
+  .getintouch__title h1 {
+    padding: 0;
+    font-size: 50px;
+    font-weight: 600;
+  }
+  .getintouch__title img {
+    width: 130px;
+    margin-right: -20px;
+  }
+  .getintouch__details {
+    flex-direction: column;
+  }
+  .getintouch__details-left h1 {
+    font-size: 54px;
+  }
+  .getintouch__details-left p {
+    font-size: 18px;
+  }
+  .getintouch__details-left-info {
+    gap: 20px;
+  }
+  .getintouch__details-left-info--email p, .getintouch__details-left-info--phone p, .getintouch__details-left-info--location p {
+    font-size: 18px;
+  }
+  .getintouch__details-left-info--email img, .getintouch__details-left-info--phone img, .getintouch__details-left-info--location img {
+    width: 25px;
+  }
+  .getintouch__details-right label {
+    font-size: 20px;
+  }
+  .getintouch__details-right input {
+    width: 100%;
+    font-size: 20px;
+  }
+  .getintouch__details-right textarea {
+    width: 100%;
+    font-size: 20px;
+  }
 }/*# sourceMappingURL=GetInTouch.css.map */
