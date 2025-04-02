@@ -100,4 +100,25 @@ body {
   display: flex;
   gap: 50px;
   margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    margin: 50px 70px;
+  }
+  .footer__top {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .footer__top-left p {
+    font-size: 18px;
+  }
+  .footer__bottom {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 50px;
+  }
+  .footer__bottom-left {
+    word-spacing: 2px;
+  }
 }/*# sourceMappingURL=Footer.css.map */

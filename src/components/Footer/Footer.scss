@@ -73,3 +73,30 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .footer {
+    margin: 50px 70px;
+
+    &__top {
+      flex-direction: column;
+      gap: 50px;
+
+      &-left {
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+
+    &__bottom {
+      display: flex;
+      flex-direction: column-reverse;
+      margin-bottom: 50px;
+
+      &-left {
+        word-spacing: 2px;
+      }
+    }
+  }
+}

@@ -190,4 +190,8 @@ body {
     width: 100%;
     font-size: 20px;
   }
+  .getintouch__details-right button {
+    font-size: 20px;
+    padding: 15px 40px;
+  }
 }/*# sourceMappingURL=GetInTouch.css.map */
