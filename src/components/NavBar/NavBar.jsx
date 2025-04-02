@@ -1,17 +1,40 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./NavBar.scss";
 import Logo from "../../assets/logo.svg";
 import Underline from "../../assets/nav_underline.svg";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import MenuOpen from "../../assets/menu_open.svg";
+import MenuClose from "../../assets/menu_close.svg";
 
 function NavBar() {
   const [menu, setMenu] = useState("Home");
+  const menuRef = useRef();
+
+  const openMenu = () => {
+    menuRef.current.style.right = "0";
+  };
+
+  const closeMenu = () => {
+    menuRef.current.style.right = "-350px";
+  };
 
   return (
     <>
       <div className="navbar">
         <img src={Logo} alt="Logo" className="navbar__logo" />
-        <ul className="navbar__menu">
+        <img
+          src={MenuOpen}
+          alt="Menu Open Icon"
+          onClick={openMenu}
+          className="navbar__menu-open"
+        />
+        <ul ref={menuRef} className="navbar__menu">
+          <img
+            src={MenuClose}
+            alt="Menu Close Icon"
+            onClick={closeMenu}
+            className="navbar__menu-close"
+          />
           <li>
             <AnchorLink className="anchor-link" href="#Home">
               <p onClick={() => setMenu("Home")}>Home</p>
