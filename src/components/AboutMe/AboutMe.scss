@@ -196,3 +196,86 @@
     }
   }
 }
+
+@media (max-width: 320px) {
+  .about-me {
+    margin: 40px 20px;
+    gap: 60px;
+
+    &__title {
+      h1 {
+        font-size: 36px;
+        padding: 0;
+      }
+
+      img {
+        width: 100px;
+        right: -10px;
+      }
+    }
+
+    &__content {
+      flex-direction: column;
+      gap: 40px;
+
+      &-details {
+        gap: 50px;
+
+        &-text {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 28px;
+        }
+
+        &-skills {
+          gap: 16px;
+
+          &-html,
+          &-js,
+          &-react,
+          &-node,
+          &-sql {
+            gap: 16px;
+
+            p {
+              font-size: 16px;
+              min-width: 140px;
+            }
+
+            hr {
+              height: 5px;
+              width: 100%; // let it fill container
+            }
+          }
+        }
+      }
+    }
+
+    &__achievements {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+
+      &-code,
+      &-projects,
+      &-techstack {
+        h1 {
+          font-size: 28px;
+        }
+
+        p {
+          font-size: 14px;
+          text-align: center;
+        }
+      }
+
+      hr {
+        width: 80%;
+        height: 2px;
+        background: white;
+        border: none;
+        opacity: 0.2;
+      }
+    }
+  }
+}

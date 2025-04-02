@@ -185,4 +185,63 @@ body {
     text-align: center;
     font-size: 16px;
   }
+}
+@media (max-width: 320px) {
+  .about-me {
+    margin: 40px 20px;
+    gap: 60px;
+  }
+  .about-me__title h1 {
+    font-size: 36px;
+    padding: 0;
+  }
+  .about-me__title img {
+    width: 100px;
+    right: -10px;
+  }
+  .about-me__content {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .about-me__content-details {
+    gap: 50px;
+  }
+  .about-me__content-details-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+  .about-me__content-details-skills {
+    gap: 16px;
+  }
+  .about-me__content-details-skills-html, .about-me__content-details-skills-js, .about-me__content-details-skills-react, .about-me__content-details-skills-node, .about-me__content-details-skills-sql {
+    gap: 16px;
+  }
+  .about-me__content-details-skills-html p, .about-me__content-details-skills-js p, .about-me__content-details-skills-react p, .about-me__content-details-skills-node p, .about-me__content-details-skills-sql p {
+    font-size: 16px;
+    min-width: 140px;
+  }
+  .about-me__content-details-skills-html hr, .about-me__content-details-skills-js hr, .about-me__content-details-skills-react hr, .about-me__content-details-skills-node hr, .about-me__content-details-skills-sql hr {
+    height: 5px;
+    width: 100%;
+  }
+  .about-me__achievements {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .about-me__achievements-code h1, .about-me__achievements-projects h1, .about-me__achievements-techstack h1 {
+    font-size: 28px;
+  }
+  .about-me__achievements-code p, .about-me__achievements-projects p, .about-me__achievements-techstack p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .about-me__achievements hr {
+    width: 80%;
+    height: 2px;
+    background: white;
+    border: none;
+    opacity: 0.2;
+  }
 }/*# sourceMappingURL=AboutMe.css.map */

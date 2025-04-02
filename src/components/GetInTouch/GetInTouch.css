@@ -194,4 +194,60 @@ body {
     font-size: 20px;
     padding: 15px 40px;
   }
+}
+@media (max-width: 320px) {
+  .getintouch {
+    margin: 40px 20px;
+    gap: 40px;
+  }
+  .getintouch__title h1 {
+    font-size: 32px;
+    padding: 0;
+  }
+  .getintouch__title img {
+    width: 80px;
+    right: 0;
+  }
+  .getintouch__details {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .getintouch__details-left h1 {
+    font-size: 36px;
+  }
+  .getintouch__details-left p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .getintouch__details-left-info {
+    gap: 16px;
+  }
+  .getintouch__details-left-info--email, .getintouch__details-left-info--phone, .getintouch__details-left-info--location {
+    gap: 12px;
+  }
+  .getintouch__details-left-info--email p, .getintouch__details-left-info--phone p, .getintouch__details-left-info--location p {
+    font-size: 14px;
+  }
+  .getintouch__details-left-info--email img, .getintouch__details-left-info--phone img, .getintouch__details-left-info--location img {
+    width: 20px;
+  }
+  .getintouch__details-right {
+    gap: 20px;
+  }
+  .getintouch__details-right label {
+    font-size: 16px;
+  }
+  .getintouch__details-right input,
+  .getintouch__details-right textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+  .getintouch__details-right textarea {
+    padding: 20px;
+  }
+  .getintouch__details-right button {
+    font-size: 16px;
+    padding: 12px 32px;
+    margin-bottom: 40px;
+  }
 }/*# sourceMappingURL=GetInTouch.css.map */

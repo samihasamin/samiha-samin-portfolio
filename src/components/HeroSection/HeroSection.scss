@@ -106,3 +106,41 @@
     }
   }
 }
+
+@media (max-width: 320px) {
+  .hero {
+    &__pic {
+      margin-top: 100px;
+      width: 200px; // smaller image
+    }
+
+    &__headline {
+      margin-top: 40px;
+      width: 90%;
+      font-size: 36px; // smaller headline
+      gap: 20px;
+    }
+
+    &__tagline {
+      width: 90%;
+      font-size: 17px;
+      line-height: 28px;
+      margin: 10px 0;
+    }
+
+    &__action {
+      flex-direction: column; // stack the buttons vertically
+      gap: 12px;
+      font-size: 16px;
+      margin-bottom: 40px;
+
+      &-connect {
+        padding: 16px 24px;
+      }
+
+      &-resume {
+        padding: 16px 32px;
+      }
+    }
+  }
+}
