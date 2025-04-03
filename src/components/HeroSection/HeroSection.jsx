@@ -20,7 +20,14 @@ function HeroSection() {
             <p onClick={() => setMenu("Contact")}>Let's Connect</p>
           </AnchorLink>
         </div>
-        <div className="hero__action-resume">My Resume</div>
+        <a
+          href="/Samiha Samin - Software Developer.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hero__action-resume"
+        >
+          My Resume
+        </a>
       </div>
     </div>
   );

@@ -58,6 +58,8 @@
     &-resume {
       padding: 25px 75px;
       border-radius: 50px;
+      text-decoration: none;
+      color: inherit;
       border: 2px solid white;
       cursor: pointer;
 
@@ -111,13 +113,13 @@
   .hero {
     &__pic {
       margin-top: 100px;
-      width: 200px; // smaller image
+      width: 200px;
     }
 
     &__headline {
       margin-top: 40px;
       width: 90%;
-      font-size: 36px; // smaller headline
+      font-size: 36px;
       gap: 20px;
     }
 
