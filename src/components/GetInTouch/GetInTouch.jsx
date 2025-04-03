@@ -11,7 +11,6 @@ function GetInTouch() {
 
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
-  const [hcaptchaToken, setHcaptchaToken] = useState("");
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -29,13 +28,7 @@ function GetInTouch() {
       return;
     }
 
-    if (!hcaptchaToken) {
-      setError("Please fill out captcha field");
-      return;
-    }
-
     formData.append("access_key", accessKey);
-    formData.append("h-captcha-response", hcaptchaToken);
 
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
@@ -53,7 +46,6 @@ function GetInTouch() {
       if (res.success) {
         setMessage("Email sent successfully!");
         event.target.reset();
-        setHcaptchaToken("");
       } else {
         setError(res.message || "Something went wrong.");
       }
@@ -115,10 +107,6 @@ function GetInTouch() {
             rows="8"
             placeholder="Enter your message"
           ></textarea>
-          <HCaptcha
-            sitekey={import.meta.env.VITE_HCAPTCHA_SITEKEY}
-            onVerify={(token) => setHcaptchaToken(token)}
-          />
           <button type="submit">Submit now</button>
           {message && <p className="success">{message}</p>}
           {error && <p className="error">{error}</p>}

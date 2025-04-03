@@ -22,7 +22,7 @@ It reflects my love for blending design and code to bring ideas to life — and 
 
 ## 🚀 Live Demo
 
-🔗 [View Live Website](https://your-portfolio-link.com)
+🔗 [View Live Website](https://samihasamin.com/)
 
 ## 📁 Features
 
@@ -38,4 +38,4 @@ If you’d like to collaborate, chat about a project, or explore opportunities �
 
 📧 samihasamin@hotmail.com
 🔗 [LinkedIn](https://www.linkedin.com/in/samihasamin/)  
-🌐 [Portfolio](https://your-portfolio-link.com)
+🌐 [Portfolio](https://samihasamin.com/)
