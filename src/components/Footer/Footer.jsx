@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Footer.scss";
 import ThemePattern from "../../assets/theme_pattern.svg";
 import FooterLogo from "../../assets/footer_logo.svg";
 import UserIcon from "../../assets/user_icon.svg";
 
 function Footer() {
+  const [showMessage, setShowMessage] = useState(false);
+
+  const handleSubscribeClick = () => {
+    setShowMessage(true);
+    setTimeout(() => setShowMessage(false), 3000);
+  };
+
   return (
     <div className="footer">
       <div className="footer__top">
@@ -20,7 +27,17 @@ function Footer() {
             <img src={UserIcon} alt="User Icon" />
             <input type="email" placeholder="Enter Email" />
           </div>
-          <div className="footer__top-right-subscribe">Subscribe</div>
+          <div
+            className="footer__top-right-subscribe"
+            onClick={handleSubscribeClick}
+          >
+            Subscribe
+          </div>
+          {showMessage && (
+            <p className="footer__top-right-message">
+              ✉️ Thanks for your interest! Subscription will be available soon.
+            </p>
+          )}
         </div>
       </div>
       <hr />
