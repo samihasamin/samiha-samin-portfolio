@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./GetInTouch.scss";
 import ThemePattern from "../../assets/theme_pattern.svg";
 import EmailIcon from "../../assets/mail_icon.svg";
@@ -8,28 +8,48 @@ import LocationIcon from "../../assets/location_icon.svg";
 function GetInTouch() {
   const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
 
+  const [message, setMessage] = useState("");
+  const [error, setError] = useState("");
+
   const onSubmit = async (event) => {
     event.preventDefault();
+    setMessage("");
+    setError("");
+
     const formData = new FormData(event.target);
 
-    formData.append("access_key", accessKey);
+    const name = formData.get("name");
+    const email = formData.get("email");
+    const message = formData.get("message");
 
-    console.log("Access Key:", import.meta.env.VITE_WEB3FORMS_ACCESS_KEY);
+    if (!name || !email || !message) {
+      setError("Please fill in all the fields");
+      return;
+    }
+
+    formData.append("access_key", accessKey);
 
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
 
-    const res = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: json,
-    }).then((res) => res.json());
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: json,
+      }).then((res) => res.json());
 
-    if (res.success) {
-      alert(res.message);
+      if (res.success) {
+        setMessage("Email sent successfully!");
+        event.target.reset();
+      } else {
+        setError(res.message || "Something went wrong.");
+      }
+    } catch (err) {
+      setError("There was an error submitting the form.");
     }
   };
 
@@ -86,7 +106,9 @@ function GetInTouch() {
             rows="8"
             placeholder="Enter your message"
           ></textarea>
-          <button type="submit">Submit</button>
+          <button type="submit">Submit now</button>
+          {message && <p className="success">{message}</p>}
+          {error && <p className="error">{error}</p>}
         </form>
       </div>
     </div>
