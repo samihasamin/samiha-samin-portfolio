@@ -7,7 +7,6 @@
   align-items: center;
   justify-content: center;
   gap: 80px;
-  margin: 80px 170px;
 
   &__title {
     position: relative;
@@ -101,6 +100,7 @@
         color: #a0a0a0;
         font-family: "Outfit";
         font-size: 20px;
+        resize: none;
       }
 
       button {
@@ -120,6 +120,12 @@
         }
       }
     }
+  }
+}
+
+@media (min-width: 1280px) {
+  .getintouch {
+    margin: 0 50px; // Add margins here (adjust values as needed)
   }
 }
 
